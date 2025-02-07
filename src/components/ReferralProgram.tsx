@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Users, Gift, Coins, ArrowRight, Share2, Award, CheckCircle, Zap } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ReferralProgram = () => {
   const [hoveredStep, setHoveredStep] = useState<number | null>(null);
@@ -165,10 +166,13 @@ const ReferralProgram = () => {
                 className="space-y-4"
                 whileHover={{ scale: 1.02 }}
               >
-                <button className="w-full bg-gradient-to-r from-green-500 to-emerald-500 text-white py-4 rounded-xl font-semibold hover:from-green-600 hover:to-emerald-600 transition-all duration-300 flex items-center justify-center space-x-2">
+                <Link
+                  to="/indicar"
+                  className="w-full bg-gradient-to-r from-green-500 to-emerald-500 text-white py-4 rounded-xl font-semibold hover:from-green-600 hover:to-emerald-600 transition-all duration-300 flex items-center justify-center space-x-2"
+                >
                   <Zap size={20} />
                   <span>Começar a Indicar Agora</span>
-                </button>
+                </Link>
               </motion.div>
             </div>
 

@@ -10,6 +10,7 @@ import Coverage from './components/Coverage';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ClientArea from './components/ClientArea';
+import ReferralSystem from './components/ReferralSystem';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
               </>
             } />
             <Route path="/cliente" element={<ClientArea />} />
+            <Route path="/indicar" element={<ReferralSystem />} />
           </Routes>
         </main>
         <Footer />
